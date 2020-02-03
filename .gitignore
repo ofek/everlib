@@ -1,0 +1,13 @@
+*.log
+*.pyc
+/.cache
+/.coverage
+/.eggs
+/.idea
+/.tox
+/everlib.egg-info
+/build
+/dist
+/docs/build
+/wheelhouse
+/pip-wheel-metadata
