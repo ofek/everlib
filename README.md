@@ -1,4 +1,4 @@
-# everlib
+# EverLib
 
 [![PyPI - Status](https://img.shields.io/pypi/status/everlib.svg)](https://pypi.org/project/everlib)
 [![PyPI - Version](https://img.shields.io/pypi/v/everlib.svg)](https://pypi.org/project/everlib)
@@ -16,7 +16,7 @@
 
 ## Installation
 
-everlib supports Python 3.6+ and is distributed on [PyPI](https://pypi.org) for macOS, Windows, and Linux.
+`EverLib` supports Python 3.6+ and is distributed on [PyPI](https://pypi.org) for macOS, Windows, and Linux.
 
 ```console
 pip install everlib
@@ -24,7 +24,7 @@ pip install everlib
 
 ## License
 
-everlib is distributed under the terms of both
+`EverLib` is distributed under the terms of both
 
 - [Apache License, Version 2.0](https://choosealicense.com/licenses/apache-2.0)
 - [MIT License](https://choosealicense.com/licenses/mit)

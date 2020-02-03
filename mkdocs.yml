@@ -1,0 +1,82 @@
+# Project information
+site_name: EverLib
+site_description: Everlasting media library backed by cloud storage
+site_author: Ofek Lev
+site_url: https://ofek.dev/everlib
+
+# Repository
+repo_name: ofek/everlib
+repo_url: https://github.com/ofek/everlib
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Ofek Lev'
+
+# Configuration
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: images/favicon.ico
+  logo: images/logo.png
+
+# Customization
+extra:
+  feature:
+    tabs: true
+  social:
+    - type: globe
+      link: https://keybase.io/ofek
+    - type: github-alt
+      link: https://github.com/ofek
+    - type: twitter
+      link: https://twitter.com/Ofekmeister
+    - type: linkedin
+      link: https://www.linkedin.com/in/ofeklev
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md

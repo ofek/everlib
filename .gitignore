@@ -5,9 +5,10 @@
 /.eggs
 /.idea
 /.tox
-/everlib.egg-info
+/.vscode
 /build
 /dist
-/docs/build
-/wheelhouse
+/everlib.egg-info
 /pip-wheel-metadata
+/site
+/wheelhouse
