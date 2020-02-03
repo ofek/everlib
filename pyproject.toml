@@ -1,3 +1,7 @@
+[build-system]
+requires = ['setuptools >= 40.6.2', 'wheel >= 0.30.0']
+build-backend = 'setuptools.build_meta'
+
 [tool.black]
 include = '\.pyi?$'
 line-length = 120
@@ -12,3 +16,36 @@ known_first_party = 'everlib'
 line_length = 120
 multi_line_output = 3
 use_parentheses = true
+
+[tool.tox]
+legacy_tox_ini = '''
+[tox]
+minversion = 3.4.0
+isolated_build = true
+envlist =
+    docs
+    style
+
+[testenv]
+basepython = python3
+passenv = *
+
+[testenv:docs]
+skip_install = true
+deps =
+    mkdocs>=1.0.4
+    mkdocs-material>=3.2.0
+    Pygments>=2.3.1
+    pymdown-extensions>=6.0.0
+commands =
+    mkdocs build
+
+[testenv:style]
+skip_install = true
+deps =
+    black
+    isort
+commands =
+    black --check --diff .
+    isort --check-only --diff --recursive .
+'''
